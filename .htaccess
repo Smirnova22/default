@@ -1,0 +1,17 @@
+# Запрет просматривать файлы директории
+Options -Indexes
+# Разрешать следовать за символическими связями в этом каталоге
+Options +FollowSymLinks
+
+<ifModule mod_headers.c>
+ Header set Strict-Transport-Security "max-age=10886400; includeSubDomains; preload"
+ Header set X-XSS-Protection "1; mode=block"
+ Header set X-Frame-Options "sameorigin"
+ Header set X-Content-Type-Options "nosniff"
+ <filesMatch ".(ogg|ogv|eot|otf|woff|woff2|mp4|ttf|zip|rar|doc|xls|ppt|wav|rtf)$">
+  Header set Cache-Control "max-age=31536000, public"
+ </filesMatch>
+  <filesMatch ".(php|css|js|html|htm|xml|txt|svg|svgz|jpg|jpeg|gif|png|webp|ico|bmp)$">
+  Header set Cache-Control "max-age=0, private, no-store, no-cache, must-revalidate, no-transform"
+ </filesMatch>
+</ifModule>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Меню</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание страницы" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header-container">
+        <div class="wrapper">
+          <nav class="header-nav">
+            <a href="/" class="header-logo">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <ul class="header-list">
+              <li>
+                <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/about.html">О нас</a>
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/delivery.html"
+                  >Доставка</a
+                >
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/contacts.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <ul class="header-icon">
+              <li>
+                <button class="search__img" id="searchbtn">
+                  <svg>
+                    <use href="/img/sprite.svg#search3"></use>
+                  </svg>
+                </button>
+                <div class="header-input" id="header-input">
+                  <form method="post" action="/">
+                    <input
+                      class="input-search"
+                      type="text"
+                      placeholder="Поиск"
+                    />
+                    <button class="button-search">
+                      <svg>
+                        <use href="/img/sprite.svg#search3"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <a
+                  class="header-icon-basket desktop-device"
+                  href="/pages/cart.html"
+                >
+                  <svg>
+                    <use href="/img/sprite.svg#basket3"></use>
+                  </svg>
+                  <div class="header-icon-basket-3 font-keitaro" id="cart-num">
+                    0
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="header-icon-fav desktop-device"
+                  href="/pages/favorite.html"
+                >
+                  <svg>
+                    <use href="/img/sprite.svg#fav"></use>
+                  </svg>
+                  <div class="header-icon-fav-0 font-keitaro" id="fav-num">
+                    0
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/pages/personal.html"
+                  class="header-icon-lk desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#lk3"></use></svg
+                ></a>
+              </li>
+              <div class="header-phone font-keitaro">
+                <a href="tel:+78005554555">8 800 555 45 55</a>
+                <p class="header-time font-keitaro">c 7.00 до 22.00</p>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-container">
+        <div class="wrapper">
+          <section>
+            <div>
+              <div class="menu">
+                <div class="menu-title font-montserrat">
+                  Наше меню
+                  <div class="menu-img">
+                    <img src="/img/sushi.png" alt="Суши" />
+                  </div>
+                </div>
+              </div>
+              <div class="section-menu">
+                <ul class="sidebar">
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Суши и роллы</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/sushi.png" alt="" /></span
+                    ></a>
+                  </li>
+
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Японские закуски</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/sushi2.png" alt="" /></span
+                    ></a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Японские горячие блюда</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/sushi3.png" alt="" /></span
+                    ></a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Десерты</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/icecream.png" alt="" /></span
+                    ></a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Безалкогольные напитки</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/drink2.png" alt="" /></span
+                    ></a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Традиционные чаи</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/drink3.png" alt="" /></span
+                    ></a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a href="#"
+                      ><span class="sidebar-title">Алкогольные напитки</span
+                      ><span class="sidebar-img"
+                        ><img src="/content/drink.png" alt="" /></span
+                    ></a>
+                  </li>
+                </ul>
+                <div class="page-menu-cards">
+                  <div class="page-menu-hot" data-product-card>
+                    <img src="/content/banner_hot.png" alt="Рекламный баннер" />
+                    <div class="effect-to-right">
+                      <div class="banner-title font-keitaro">
+                        <p data-price="580">580P</p>
+                        <div class="banner-title-text">
+                          <button class="banner-title-button" data-minus="001">
+                            -
+                          </button>
+                          <p class="banner-title-button" data-cart-count>0</p>
+                          <button
+                            class="banner-title-button"
+                            data-plus
+                            data-id="001"
+                            data-name="Banner"
+                            data-desc="Adv banner"
+                            data-img="/content/banner_hot.png"
+                          >
+                            +
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="page-menu-ramen font-keitaro">RAMEN</p>
+                  <div class="page-menu-card" data-product-card>
+                    <div class="page-menu-card-img">
+                      <img src="/content/page_menu4.png" alt="" />
+                    </div>
+                    <p class="page-menu-card-name">Мисо рамен</p>
+                    <h4>
+                      Нудлсы рамэн, Бульон на куриных костях, Паста мисо,
+                      Куриное филе, Яйцо, Лук зеленый, Морковь, Специи
+                    </h4>
+
+                    <button
+                      class="page-menu-icon add-favorite"
+                      data-add-favorite
+                    >
+                      <svg><use href="/img/sprite.svg#fav"></use></svg>
+                    </button>
+
+                    <div class="page-menu-click button font-keitaro">
+                      <p data-price="580">580P</p>
+                      <div class="page-menu-click-item">
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-minus="002"
+                        >
+                          -
+                        </button>
+                        <p class="menu-click-button" data-cart-count>0</p>
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-plus
+                          data-id="002"
+                          data-name="Мисо Рамен"
+                          data-desc="Нудлсы рамэн, Бульон на куриных костях, Паста мисо,
+                      Куриное филе, Яйцо, Лук зеленый, Морковь, Специи"
+                          data-img="/content/page_menu4.png"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="page-menu-card" data-product-card>
+                    <p class="page-menu-card-name">Тонкотсу</p>
+                    <div class="page-menu-card-img">
+                      <img src="/content/page_menu1.png" alt="" />
+                    </div>
+                    <h4>
+                      Нудлсы рамэн, Бульон на свиных костях, Паста тонкотсу,
+                      Свинина, Яйцо, Лук зеленый, Капуста, Кукуруза, Нори
+                    </h4>
+
+                    <button
+                      class="page-menu-icon add-favorite"
+                      data-add-favorite
+                    >
+                      <svg><use href="/img/sprite.svg#fav"></use></svg>
+                    </button>
+
+                    <div class="page-menu-click button font-keitaro">
+                      <p data-price="580">580P</p>
+                      <div class="page-menu-click-item">
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-minus="003"
+                        >
+                          -
+                        </button>
+                        <p class="menu-click-button" data-cart-count>0</p>
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-plus
+                          data-id="003"
+                          data-name="Тонкотсу"
+                          data-desc="Нудлсы рамэн, Бульон на свиных костях, Паста тонкотсу,
+                      Свинина, Яйцо, Лук зеленый, Капуста, Кукуруза, Нори"
+                          data-img="/content/page_menu1.png"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="page-menu-card" data-product-card>
+                    <div class="page-menu-card-img">
+                      <img src="/content/page_menu2.png" alt="" />
+                    </div>
+                    <p class="page-menu-card-name">Шою Рамен</p>
+                    <h4>
+                      Нудлсы рамэн, Бульон на куриных костях, Соус шою (соевый
+                      соус, мирин, рисовый уксус, чеснок, имбирь), Куриное филе,
+                      Яйцо, Кимчи, Лук зеленый, Специи
+                    </h4>
+
+                    <button
+                      class="page-menu-icon add-favorite"
+                      data-add-favorite
+                    >
+                      <svg><use href="/img/sprite.svg#fav"></use></svg>
+                    </button>
+
+                    <div class="page-menu-click button font-keitaro">
+                      <p data-price="580">580P</p>
+                      <div class="page-menu-click-item">
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-minus="004"
+                        >
+                          -
+                        </button>
+                        <p class="menu-click-button" data-cart-count>0</p>
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-plus
+                          data-id="004"
+                          data-name="Шою Рамен"
+                          data-desc="Нудлсы рамэн, Бульон на куриных костях, Соус шою (соевый
+                      соус, мирин, рисовый уксус, чеснок, имбирь), Куриное филе,
+                      Яйцо, Кимчи, Лук зеленый, Специи"
+                          data-img="/content/page_menu2.png"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="page-menu-card" data-product-card>
+                    <div class="page-menu-card-img">
+                      <img src="/content/page_menu3.png" alt="" />
+                    </div>
+                    <p class="page-menu-card-name">Мисо рамен</p>
+                    <h4>
+                      Нудлсы рамэн, Бульон на куриных костях, Паста мисо,
+                      Куриное филе, Яйцо, Лук зеленый, Морковь, Специи
+                    </h4>
+
+                    <button
+                      class="page-menu-icon add-favorite"
+                      data-add-favorite
+                    >
+                      <svg><use href="/img/sprite.svg#fav"></use></svg>
+                    </button>
+
+                    <div class="page-menu-click button font-keitaro">
+                      <p data-price="580">580P</p>
+                      <div class="page-menu-click-item">
+                        <button
+                          class="menu-click-button counter-button button-primary"
+                          data-minus="005"
+                        >
+                          -
+                        </button>
+                        <p class="menu-click-button" data-cart-count>0</p>
+                        <button
+                          class="menu-click-button button-primary counter-button"
+                          data-plus
+                          data-id="005"
+                          data-name="Мисо Рамен"
+                          data-desc="Нудлсы рамэн, Бульон на куриных костях, Паста мисо,
+                      Куриное филе, Яйцо, Лук зеленый, Морковь, Специи"
+                          data-img="/content/page_menu4.png"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="form-input">
+            <div class="form-img-panda">
+              <img src="/img/panda.png" alt="Панда" />
+            </div>
+            <div class="form-title">
+              <p class="form-title-p1">
+                Получи <span class="font-keitaro">Ramen</span> бесплатно!
+              </p>
+              <p class="form-title-p2">
+                оставь свои данные и мы <span>пришлем</span> тебе бонусный
+                <span>Промокод</span>
+              </p>
+            </div>
+            <div class="form-img-ramen">
+              <img src="/content/page_menu (1).png" alt="Ramen" />
+            </div>
+            <div class="form-img-wave">
+              <img src="/img/wave2.png" alt="Облако" />
+            </div>
+            <form action="#">
+              <input class="menu-form-input" type="text" placeholder="Имя" />
+              <input
+                class="menu-form-input-phone"
+                type="tel"
+                placeholder="+7(899)999-99-99"
+              />
+              <button class="button-input" type="submit">Отправить</button>
+            </form>
+          </section>
+        </div>
+      </main>
+      <footer class="footer-container">
+        <div class="wrapper">
+          <nav class="footer-nav">
+            <a href="/" class="header-logo">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li>
+                  <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/delivery.html"
+                    >Доставка</a
+                  >
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="footer-icon">
+              <li>
+                <a
+                  href="/pages/favorite.html"
+                  class="header-icon-fav desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#fav"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="/pages/personal.html"
+                  class="header-icon-lk desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#lk3"></use></svg
+                ></a>
+              </li>
+              <li>
+                <span class="footer-icon-inst desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#telegram"></use></svg
+                ></span>
+              </li>
+              <li>
+                <span class="footer-icon-whatsapp desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#whatsapp"></use></svg
+                ></span>
+              </li>
+              <li>
+                <button class="footer-icon-hot font-montserrat button">
+                  горячая линия
+                </button>
+              </li>
+              <li>
+                <p class="footer-time font-keitaro">c 7.00 до 22.00</p>
+                <a class="footer-phone font-keitaro" href="tel:+78005554555"
+                  >8 800 555 45 55</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer-red">
+            <li class="footer-red-p1 font-keitaro">Tokyo bites 2023</li>
+            <li class="footer-red-p2 font-montserrat">
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer-red-p3 font-montserrat">
+              <a href="#">made in FT</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

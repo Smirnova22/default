@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Доставка</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание страницы" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <header class="header-container">
+        <div class="wrapper">
+          <nav class="header-nav">
+            <a href="/" class="header-logo">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <ul class="header-list">
+              <li>
+                <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/about.html">О нас</a>
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/delivery.html"
+                  >Доставка</a
+                >
+              </li>
+              <li>
+                <a class="font-montserrat" href="/pages/contacts.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <ul class="header-icon">
+              <li>
+                <button class="search__img" id="searchbtn">
+                  <svg>
+                    <use href="/img/sprite.svg#search3"></use>
+                  </svg>
+                </button>
+                <div class="header-input" id="header-input">
+                  <form method="post" action="/">
+                    <input
+                      class="input-search"
+                      type="text"
+                      placeholder="Поиск"
+                    />
+                    <button class="button-search">
+                      <svg>
+                        <use href="/img/sprite.svg#search3"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <button class="header-icon-basket desktop-device" id="cart">
+                  <svg>
+                    <use href="/img/sprite.svg#basket3"></use>
+                  </svg>
+                  <div class="header-icon-basket-3 font-keitaro" id="cart-num">
+                    0
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="header-icon-fav desktop-device">
+                  <svg>
+                    <use href="/img/sprite.svg#fav"></use>
+                  </svg>
+                  <div class="header-icon-fav-0 font-keitaro" id="fav-num">
+                    0
+                  </div>
+                </button>
+              </li>
+              <li>
+                <a
+                  href="/pages/personal.html"
+                  class="header-icon-lk desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#lk3"></use></svg
+                ></a>
+              </li>
+              <div class="header-phone font-keitaro">
+                <a href="tel:+78005554555">8 800 555 45 55</a>
+                <p class="header-time font-keitaro">c 7.00 до 22.00</p>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main-container">
+        <div class="wrapper">
+          <div class="menu">
+            <div class="menu-title font-montserrat">
+              Зона доставки
+              <div class="menu-img">
+                <img src="/img/sushi.png" alt="Суши" />
+              </div>
+            </div>
+          </div>
+          <section class="page-delivery">
+            <div class="page-delivery-block">
+              <p class="delivery-block-p1 font-keitaro">
+                Доставка работает <span>без выходных</span> с 7:00 до 22:00.
+              </p>
+              <p class="delivery-block-p2 font-keitaro">
+                заказы оформленные <span>после 22:00</span> будут обслужены на
+                <span>следующий день</span>
+              </p>
+              <ul class="delivery-list">
+                <li class="delivery-item font-keitaro">
+                  Мы используем собственный курьерский сервис для доставки
+                  заказов.
+                </li>
+                <li class="delivery-item font-keitaro">
+                  срок доставки зависит от выбранного района, точный срок
+                  узнаете при оформлении заказа.
+                </li>
+                <li class="delivery-item font-keitaro">
+                  После оформления заказа вы получите уведомление о
+                  подтверждении заказа.
+                </li>
+                <li class="delivery-item font-keitaro">
+                  Курьер свяжется с вами для уточнения адреса и времени
+                  доставки.
+                </li>
+                <li class="delivery-item font-keitaro">
+                  Оплата производится онлайн при оформлении заказа.
+                </li>
+              </ul>
+              <div class="delivery-contacts">
+                <a class="font-keitaro" href="tel:+78005554555"
+                  >8 800 555 45 55</a
+                >
+                <a href="mailto:mail@mail.com">mail@mail.com</a>
+              </div>
+              <p class="delivery-adress font-keitaro">
+                не нашли свой адрес? напишите нам, ответим в рабочее время в
+                течении <span>10 минут</span>
+              </p>
+              <form class="delivery-form" action="#">
+                <input
+                  class="delivery-form-input"
+                  type="tel"
+                  placeholder="+7(899)999-99-99"
+                />
+                <input
+                  class="delivery-form-input"
+                  type="text"
+                  placeholder="Имя"
+                />
+                <input
+                  class="delivery-form-input-adress"
+                  type="text"
+                  placeholder="Ваша адрес"
+                />
+                <button class="delivery-button-input" type="submit">
+                  Отправить
+                </button>
+              </form>
+              <div class="delivery-map">
+                <img src="/img/map.png" alt="Map" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer-container">
+        <div class="wrapper">
+          <nav class="footer-nav">
+            <a href="/" class="header-logo">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li>
+                  <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/delivery.html"
+                    >Доставка</a
+                  >
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="footer-icon">
+              <li>
+                <a
+                  href="/pages/favorite.html"
+                  class="header-icon-fav desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#fav"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="/pages/personal.html"
+                  class="header-icon-lk desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#lk3"></use></svg
+                ></a>
+              </li>
+              <li>
+                <span class="footer-icon-inst desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#telegram"></use></svg
+                ></span>
+              </li>
+              <li>
+                <span class="footer-icon-whatsapp desktop-device"
+                  ><svg>
+                    <use href="/img/sprite.svg#whatsapp"></use></svg
+                ></span>
+              </li>
+              <li>
+                <button class="footer-icon-hot font-montserrat button">
+                  горячая линия
+                </button>
+              </li>
+              <li>
+                <p class="footer-time font-keitaro">c 7.00 до 22.00</p>
+                <a class="footer-phone font-keitaro" href="tel:+78005554555"
+                  >8 800 555 45 55</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="footer-red">
+            <li class="footer-red-p1 font-keitaro">Tokyo bites 2023</li>
+            <li class="footer-red-p2 font-montserrat">
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer-red-p3 font-montserrat">
+              <a href="#">made in FT</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

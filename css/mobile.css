@@ -1,0 +1,1806 @@
+/* Общие стили */
+.main-container {
+  width: calc(360 / 360 * 100vw);
+  gap: calc(40 / 360 * 100vw);
+}
+.desktop-device,
+.tablet-device {
+  display: none;
+}
+.body-container {
+  overflow-x: hidden;
+}
+.wrapper {
+  width: calc(360 / 360 * 100vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Стили шапки */
+.header-nav {
+  padding: calc(2 / 360 * 100vw) calc(20 / 360 * 100vw);
+  height: calc(50 / 360 * 100vw);
+  border-width: calc(2 / 360 * 100vw);
+  width: calc(360 / 360 * 100vw);
+}
+.mob-header-logo {
+  margin-top: calc(30 / 360 * 100vw);
+  margin-bottom: calc(25 / 360 * 100vw);
+  margin-left: calc(5 / 360 * 100vw);
+}
+.header-logo-img {
+  width: calc(71 / 360 * 100vw);
+  height: calc(69 / 360 * 100vw);
+}
+.header-logo-p {
+  margin-bottom: calc(10 / 360 * 100vw);
+}
+.header-logo-p p:nth-child(1) {
+  font-size: calc(20 / 360 * 100vw);
+}
+.header-logo-p p:nth-child(2) {
+  font-size: calc(30 / 360 * 100vw);
+}
+.header-logo-p p:nth-child(3) {
+  font-size: calc(16 / 360 * 100vw);
+}
+.header-list a {
+  margin-left: calc(20 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.header-list a:hover {
+  background-color: unset;
+  color: unset;
+  border: none;
+}
+.header-list {
+  display: block;
+  width: 0;
+}
+.header-list:active {
+  width: calc(360 / 360 * 100vw);
+  height: calc(172 / 360 * 100vw);
+  transform: scaleY(1);
+  background-color: var(--white);
+  background-image: url(/img/dropdown-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: calc(50 / 360 * 100vw);
+  left: 0;
+  gap: calc(20 / 360 * 100vw);
+}
+
+.header-icon {
+  gap: calc(10 / 360 * 100vw);
+}
+.search__img svg {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+}
+.search__img svg:hover {
+  stroke: var(--red);
+}
+.header-input {
+  top: calc(38 / 360 * 100vw);
+  right: calc(-5 / 360 * 100vw);
+  border: none;
+}
+
+.header-input form {
+  height: calc(36 / 360 * 100vw);
+  padding: calc(10 / 360 * 100vw) calc(0 / 360 * 100vw) calc(10 / 360 * 100vw)
+    calc(16 / 360 * 100vw);
+  width: calc(328 / 360 * 100vw);
+  border: none;
+}
+.button-search svg {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+  position: absolute;
+  top: calc(0 / 360 * 100vw);
+  right: calc(5 / 360 * 100vw);
+}
+.input-search {
+  font-size: calc(16 / 360 * 100vw);
+  color: #435024;
+  text-transform: capitalize;
+}
+.header-icon-basket svg {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+}
+.header-icon-basket-3 {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+  padding-top: calc(1 / 360 * 100vw);
+  font-size: calc(15 / 360 * 100vw);
+  top: calc(-3 / 360 * 100vw);
+  left: calc(50 / 360 * 100vw);
+}
+.header-icon-fav svg {
+  width: calc(23 / 360 * 100vw);
+  height: calc(23 / 360 * 100vw);
+}
+.header-icon-fav-0 {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+  padding-top: calc(1 / 360 * 100vw);
+  font-size: calc(15 / 360 * 100vw);
+  top: calc(-3 / 360 * 100vw);
+  left: calc(92 / 360 * 100vw);
+}
+.header-icon-lk svg {
+  width: calc(20 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+}
+
+.header-icon-order {
+  width: calc(120 / 360 * 100vw);
+  height: calc(31 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+  line-height: calc(19 / 360 * 100vw);
+  border-width: calc(1 / 360 * 100vw);
+}
+.header-phone {
+  padding-right: calc(14 / 360 * 100vw);
+  font-size: calc(18 / 360 * 100vw);
+  line-height: calc(16 / 360 * 100vw);
+}
+.header-time {
+  padding-top: calc(5 / 360 * 100vw);
+  padding-right: calc(10 / 360 * 100vw);
+  font-size: calc(14 / 360 * 100vw);
+  line-height: calc(12 / 360 * 100vw);
+}
+.header-text-mob {
+  color: var(--red);
+}
+
+.burger-button {
+  width: calc(25 / 360 * 100vw);
+  height: calc(25 / 360 * 100vw);
+}
+.burger-button span {
+  width: calc(25 / 360 * 100vw);
+  height: calc(2 / 360 * 100vw);
+}
+.burger-button span:active {
+  height: 0;
+}
+
+.burger-button span::before {
+  width: calc(25 / 360 * 100vw);
+  height: calc(2 / 360 * 100vw);
+  top: calc(-7 / 360 * 100vw);
+}
+.burger-button span.active::before {
+  color: aqua;
+  transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.burger-button span::after {
+  width: calc(25 / 360 * 100vw);
+  height: calc(2 / 360 * 100vw);
+  bottom: calc(-7 / 360 * 100vw);
+}
+.burger-button span.active::after {
+  transform: translate(-50%, 0%) rotate(-45deg);
+}
+/* Стили для dropdown */
+.header-dropdown:active {
+  /* width: calc(360 / 360 * 100vw);
+  height: calc(171 / 360 * 100vw);
+  background-image: url(/img/background-dropdown.png); */
+}
+/* Стили для первого блока */
+.section-one {
+  width: calc(360 / 360 * 100vw);
+  background-position: bottom;
+  background-size: contain;
+  position: relative;
+}
+.section-one-background {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-one-second {
+  display: flex;
+  flex-direction: column;
+  gap: calc(25 / 360 * 100vw);
+  margin: 0 calc(15 / 360 * 100vw) calc(100 / 360 * 100vw);
+}
+[class*="section-one-second-item"] {
+  display: flex;
+  align-items: center;
+}
+.mob-section-one-img {
+  stroke-width: calc(2 / 360 * 100vw);
+  stroke: #f8f8f8;
+  width: calc(22 / 360 * 100vw);
+  height: calc(22 / 360 * 100vw);
+  margin-right: calc(10 / 360 * 100vw);
+}
+
+[class*="section-one-second-item"] p span:first-child {
+  color: var(--white);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+[class*="section-one-second-item"] p span:last-child {
+  color: var(--white);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+[class*="section-one-second-item"] p {
+  display: flex;
+  flex-direction: column;
+  width: calc(240 / 360 * 100vw);
+  text-align: start;
+}
+.section-one-second-item-one {
+  order: 1;
+}
+.section-one-second-item-two {
+  order: 3;
+}
+.section-one-second-item-three {
+  order: 2;
+}
+
+/* Стили для блока Меню */
+.menu {
+  margin-top: calc(535 / 360 * 100vw);
+  margin-bottom: calc(30 / 360 * 100vw);
+  margin-left: calc(10 / 360 * 100vw);
+  width: calc(340 / 360 * 100vw);
+  border-width: calc(3 / 360 * 100vw);
+  height: calc(50 / 360 * 100vw);
+}
+.menu-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(80 / 360 * 100vw);
+  font-size: calc(30 / 360 * 100vw);
+  text-align: center;
+  font-size: calc(13 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.menu-title-span {
+  font-size: calc(16 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.menu-img {
+  top: calc(20 / 360 * 100vw);
+  left: calc(-50 / 360 * 100vw);
+  width: calc(77 / 360 * 100vw);
+  height: calc(67 / 360 * 100vw);
+}
+
+.section-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: calc(30 / 360 * 100vw);
+}
+
+.section-menu-new p {
+  font-size: calc(82 / 360 * 100vw);
+  top: calc(20 / 360 * 100vw);
+  letter-spacing: calc(20 / 360 * 100vw);
+  z-index: 10;
+}
+.menu-ice-cream {
+  width: calc(257 / 360 * 100vw);
+  height: calc(438 / 360 * 100vw);
+  margin-left: calc(66 / 360 * 100vw);
+  margin-bottom: calc(60 / 360 * 100vw);
+}
+.menu-ice-cream p span:first-child {
+  padding-top: calc(20 / 360 * 100vw);
+  padding-left: calc(20 / 360 * 100vw);
+  font-size: calc(13 / 360 * 100vw);
+}
+.menu-ice-cream p:first-child {
+  padding-top: calc(25 / 360 * 100vw);
+  width: calc(130 / 360 * 100vw);
+  font-size: calc(13 / 360 * 100vw);
+}
+.mob-menu-ice-cream {
+  position: absolute;
+  top: calc(480 / 360 * 100vw);
+}
+
+.menu-img-ice {
+  top: calc(-12 / 360 * 100vw);
+  left: calc(-33 / 360 * 100vw);
+  width: calc(322 / 360 * 100vw);
+  height: calc(480 / 360 * 100vw);
+}
+.menu-fish-ice-cream {
+  top: calc(335 / 360 * 100vw);
+  right: calc(14 / 360 * 100vw);
+  width: calc(80 / 360 * 100vw);
+  height: calc(107 / 360 * 100vw);
+  font-size: calc(24 / 360 * 100vw);
+}
+.menu-percent {
+  font-size: calc(46 / 360 * 100vw);
+  padding-left: calc(20 / 360 * 100vw);
+  padding-top: calc(10 / 360 * 100vw);
+}
+.menu-ice-cream button {
+  width: calc(100 / 360 * 100vw);
+  height: calc(25 / 360 * 100vw);
+  font-size: calc(10 / 360 * 100vw);
+  margin-top: calc(10 / 360 * 100vw);
+  margin-left: calc(20 / 360 * 100vw);
+}
+
+.mob-menu-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: calc(45 / 360 * 100vw);
+  border: 3px solid var(--blue);
+  background-color: var(--white);
+  margin-left: calc(10 / 360 * 100vw);
+  margin-right: calc(10 / 360 * 100vw);
+  height: calc(56 / 360 * 100vw);
+  color: var(--blue);
+  font-size: calc(13 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 500;
+  text-transform: lowercase;
+  position: relative;
+}
+.mob-menu-text {
+  color: var(--blue);
+  font-size: calc(16 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+.mob-menu-img {
+  width: calc(77 / 360 * 100vw);
+  height: calc(67 / 360 * 100vw);
+  position: absolute;
+  left: calc(10 / 360 * 100vw);
+  top: calc(5 / 360 * 100vw);
+}
+
+.menu-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(320 / 360 * 100vw);
+  row-gap: calc(20 / 360 * 100vw);
+  margin: calc(20 / 360 * 100vw);
+}
+.menu-card {
+  width: calc(152 / 360 * 100vw);
+  height: calc(188 / 360 * 100vw);
+  border: calc(3 / 360 * 100vw) solid var(--red);
+  padding-bottom: calc(18 / 360 * 100vw);
+}
+.menu-card p {
+  font-size: calc(16 / 360 * 100vw);
+}
+.menu-card-name {
+  top: calc(-20 / 360 * 100vw);
+  left: calc(0 / 360 * 100vw);
+}
+.menu-card-img {
+  height: calc(131 / 360 * 100vw);
+  margin-top: calc(-30 / 360 * 100vw);
+}
+.menu-card h4 {
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+}
+.menu-card .button {
+  width: calc(86 / 360 * 100vw);
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+  padding: calc(5 / 360 * 100vw);
+}
+.menu-card .button:hover {
+  border-width: calc(1 / 360 * 100vw);
+  border-color: var(--white);
+}
+
+/* Стили для секции HELP */
+.help {
+  width: calc(360 / 360 * 100vw);
+  height: calc(101 / 360 * 100vw);
+  border-width: calc(1 / 360 * 100vw);
+}
+.help-title {
+  padding-left: calc(20 / 360 * 100vw);
+  padding-top: calc(15 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+}
+.help-title-none {
+  display: none;
+}
+.help-title-span {
+  font-size: calc(10 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+}
+.help-title-999 {
+  font-size: calc(14 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+.help-title-mini {
+  margin-top: calc(21 / 360 * 100vw);
+  display: block;
+  color: var(--white);
+  font-size: calc(10 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: calc(168 / 360 * 100vw);
+}
+.help-order {
+  border: calc(1 / 360 * 100vw) solid var(--blue);
+  width: calc(67 / 360 * 100vw);
+  height: calc(19 / 360 * 100vw);
+  font-size: calc(7 / 360 * 100vw);
+  bottom: calc(13 / 360 * 100vw);
+  left: calc(182 / 360 * 100vw);
+  background-color: var(--white);
+  color: var(--red);
+}
+.help-order-img {
+  width: calc(141 / 360 * 100vw);
+  height: calc(112 / 360 * 100vw);
+  right: calc(-15 / 360 * 100vw);
+  top: calc(-10 / 360 * 100vw);
+}
+.mob-help-title-p1 {
+  margin-top: calc(21 / 360 * 100vw);
+  color: var(--white);
+  font-size: calc(10 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mob-help-title-p2 {
+  margin-top: calc(21 / 360 * 100vw);
+  color: var(--white);
+  font-size: calc(10 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+/* Стили для секции напитков */
+.drinks {
+  margin-bottom: calc(33 / 360 * 100vw);
+}
+.drinks-japan {
+  margin-top: calc(6 / 360 * 100vw);
+  margin-left: calc(15 / 360 * 100vw);
+  width: calc(79 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+}
+.drinks-japan-img {
+  width: calc(91 / 360 * 100vw);
+  height: calc(64 / 360 * 100vw);
+  top: calc(33 / 360 * 100vw);
+  left: calc(-30 / 360 * 100vw);
+}
+.drinks-title-img {
+  width: calc(61 / 360 * 100vw);
+  height: calc(61 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  top: calc(30 / 360 * 100vw);
+}
+.drinks-title-p {
+  margin-left: calc(17 / 360 * 100vw);
+  width: calc(211 / 360 * 100vw);
+  height: calc(70 / 360 * 100vw);
+  font-size: calc(13 / 360 * 100vw);
+  font-weight: 500;
+  border-width: calc(2 / 360 * 100vw);
+  text-transform: lowercase;
+  text-align: center;
+}
+.drinks-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(15 / 360 * 100vw);
+  width: calc(320 / 360 * 100vw);
+  padding-top: calc(30 / 360 * 100vw);
+  row-gap: calc(38 / 360 * 100vw);
+}
+.drink-card {
+  width: calc(152 / 360 * 100vw);
+  /* height: calc(188 / 360 * 100vw); */
+  border: calc(3 / 360 * 100vw) solid var(--red);
+  padding-bottom: calc(18 / 360 * 100vw);
+}
+
+.drink-card p {
+  font-size: calc(16 / 360 * 100vw);
+  font-weight: 400;
+  text-transform: lowercase;
+}
+.drink-card-name {
+  top: calc(-20 / 360 * 100vw);
+  left: calc(0 / 360 * 100vw);
+}
+.drink-card-img {
+  height: calc(140 / 360 * 100vw);
+  margin-top: calc(-9 / 360 * 100vw);
+  margin-bottom: calc(14 / 360 * 100vw);
+}
+.drink-card h4 {
+  height: calc(14 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+  margin-bottom: calc(10 / 360 * 100vw);
+}
+.drink-card .button {
+  width: calc(86 / 360 * 100vw);
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+  padding: calc(5 / 360 * 100vw);
+  margin-top: calc(10 / 360 * 100vw);
+}
+.section-drinks {
+  display: block;
+}
+.section-drinks-beer {
+  margin-top: calc(33 / 360 * 100vw);
+  width: calc(596 / 360 * 100vw);
+  /* height: calc(833 / 360 * 100vw); */
+}
+.beer {
+  margin-left: calc(23 / 360 * 100vw);
+  /* width: calc(55 / 360 * 100vw); */
+  font-size: calc(29 / 360 * 100vw);
+  letter-spacing: calc(8 / 360 * 100vw);
+  padding-top: calc(30 / 360 * 100vw);
+}
+.drinks-action {
+  top: calc(0 / 360 * 100vw);
+  left: calc(60 / 360 * 100vw);
+  width: calc(282 / 360 * 100vw);
+  height: calc(379 / 360 * 100vw);
+  border-width: calc(2 / 360 * 100vw);
+}
+.drinks-action h4 span {
+  font-size: calc(12 / 360 * 100vw);
+}
+.drinks-action h4 {
+  padding-top: calc(12 / 360 * 100vw);
+  padding-left: calc(10 / 360 * 100vw);
+  /* padding-right: calc(170 / 360 * 100vw); */
+  font-size: calc(12 / 360 * 100vw);
+}
+.drinks-action h5 {
+  font-size: calc(16 / 360 * 100vw);
+  padding-left: calc(20 / 360 * 100vw);
+  padding-top: calc(25 / 360 * 100vw);
+}
+.drinks-action-button {
+  margin-top: calc(45 / 360 * 100vw);
+  margin-left: calc(10 / 360 * 100vw);
+  width: calc(81 / 360 * 100vw);
+  height: calc(21 / 360 * 100vw);
+  font-size: calc(9 / 360 * 100vw);
+}
+.drinks-cat {
+  top: calc(-80 / 360 * 100vw);
+  right: calc(-25 / 360 * 100vw);
+  width: calc(248 / 360 * 100vw);
+}
+.drinks-cat p {
+  top: calc(239 / 360 * 100vw);
+  right: calc(164 / 360 * 100vw);
+  font-size: calc(50 / 360 * 100vw);
+}
+/* Стили для блока доставки */
+.delivery-title {
+  margin-top: calc(50 / 360 * 100vw);
+  width: calc(360 / 360 * 100vw);
+  height: calc(87 / 360 * 100vw);
+  border: calc(1 / 360 * 100vw) solid var(--red);
+}
+.delivery-title h3 {
+  font-size: calc(16 / 360 * 100vw);
+  width: calc(270 / 360 * 100vw);
+}
+.delivery-block {
+  margin-top: calc(8 / 360 * 100vw);
+  margin-left: calc(30 / 360 * 100vw);
+  margin-bottom: calc(26 / 360 * 100vw);
+  width: calc(300 / 360 * 100vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.delivery-block p {
+  padding-top: calc(24 / 360 * 100vw);
+  padding-left: calc(30 / 360 * 100vw);
+  width: calc(1162 / 360 * 100vw);
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+  line-height: calc(24 / 360 * 100vw);
+}
+.mob-delivery-japan-text {
+  width: calc(300 / 360 * 100vw);
+  margin-top: calc(20 / 360 * 100vw);
+  margin-left: calc(43 / 360 * 100vw);
+  color: var(--blue);
+  text-align: center;
+  font-size: calc(16 / 360 * 100vw);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.delivery-japan {
+  right: calc(14 / 360 * 100vw);
+  width: calc(90 / 360 * 100vw);
+  height: calc(35 / 360 * 100vw);
+  font-size: calc(30 / 360 * 100vw);
+  top: calc(300 / 360 * 100vw);
+}
+.delivery-block ul {
+  gap: calc(20 / 360 * 100vw);
+  margin-top: calc(20 / 360 * 100vw);
+  width: calc(233 / 360 * 100vw);
+  text-align: center;
+}
+.delivery-block ul li {
+  font-size: calc(10 / 360 * 100vw);
+}
+.mob-delivery-block-second {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10 / 360 * 100vw);
+  margin-top: calc(125 / 360 * 100vw);
+}
+.delivery-img {
+  top: calc(270 / 360 * 100vw);
+  left: calc(-34 / 360 * 100vw);
+  width: calc(213 / 360 * 100vw);
+  height: calc(115 / 360 * 100vw);
+}
+.delivery-button {
+  width: calc(131 / 360 * 100vw);
+  height: calc(28 / 360 * 100vw);
+  font-size: calc(10 / 360 * 100vw);
+  margin-top: calc(30 / 360 * 100vw);
+  margin-bottom: calc(17 / 360 * 100vw);
+  border-width: calc(1 / 360 * 100vw);
+}
+/* Стили для страница МЕНЮ */
+
+.sidebar {
+  padding-top: calc(60 / 360 * 100vw);
+}
+
+.sidebar-item a {
+  height: calc(72 / 360 * 100vw);
+  padding: calc(0 / 360 * 100vw) calc(80 / 360 * 100vw) 0 calc(37 / 360 * 100vw);
+}
+
+.sidebar-title {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.sidebar-img {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  width: calc(100 / 360 * 100vw);
+  height: calc(80 / 360 * 100vw);
+}
+
+.page-menu-sushi {
+  width: calc(245 / 360 * 100vw);
+  left: calc(335 / 360 * 100vw);
+}
+.sidebar {
+  width: calc(335 / 360 * 100vw);
+  margin-right: calc(90 / 360 * 100vw);
+}
+.page-menu-hot {
+  margin-top: calc(-70 / 360 * 100vw);
+  width: calc(540 / 360 * 100vw);
+  height: calc(568 / 360 * 100vw);
+}
+.banner-title {
+  margin: calc(350 / 360 * 100vw) calc(50 / 360 * 100vw) calc(200 / 360 * 100vw)
+    auto;
+  padding: calc(3 / 360 * 100vw);
+  font-size: calc(22 / 360 * 100vw);
+  width: calc(142 / 360 * 100vw);
+  height: calc(37 / 360 * 100vw);
+}
+.banner-title-text {
+  gap: calc(3 / 360 * 100vw);
+}
+.effect-to-right {
+  top: calc(65 / 360 * 100vw);
+  left: calc(12 / 360 * 100vw);
+  width: calc(485 / 360 * 100vw);
+  height: calc(455 / 360 * 100vw);
+}
+.page-menu-ramen {
+  margin-left: calc(-150 / 360 * 100vw);
+  width: calc(43 / 360 * 100vw);
+  height: calc(350 / 360 * 100vw);
+  font-size: calc(60 / 360 * 100vw);
+  line-height: calc(70 / 360 * 100vw);
+}
+.page-menu-card {
+  width: calc(330 / 360 * 100vw);
+  height: calc(350 / 360 * 100vw);
+  padding-bottom: calc(18 / 360 * 100vw);
+  margin-top: calc(80 / 360 * 100vw);
+}
+
+.page-menu-card p {
+  font-size: calc(20 / 360 * 100vw);
+  line-height: calc(24 / 360 * 100vw);
+}
+.page-menu-card-name {
+  top: calc(170 / 360 * 100vw);
+}
+.page-menu-card-img {
+  margin-top: calc(-80 / 360 * 100vw);
+  width: calc(285 / 360 * 100vw);
+}
+.page-menu-card h4 {
+  font-size: calc(12 / 360 * 100vw);
+  line-height: calc(14 / 360 * 100vw);
+}
+.page-menu-icon svg {
+  top: calc(300 / 360 * 100vw);
+  left: calc(10 / 360 * 100vw);
+  width: calc(41 / 360 * 100vw);
+  height: calc(34 / 360 * 100vw);
+}
+.page-menu-card .button {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(10 / 360 * 100vw);
+  width: calc(142 / 360 * 100vw);
+  height: calc(37 / 360 * 100vw);
+  font-size: calc(22 / 360 * 100vw);
+  line-height: calc(26 / 360 * 100vw);
+}
+.page-menu-click {
+  padding: calc(6 / 360 * 100vw) calc(10 / 360 * 100vw);
+}
+.form-input {
+  margin-bottom: calc(91 / 360 * 100vw);
+  height: calc(492 / 360 * 100vw);
+}
+.menu-form-input {
+  top: calc(252 / 360 * 100vw);
+  right: calc(625 / 360 * 100vw);
+  width: calc(370 / 360 * 100vw);
+  padding: calc(6 / 360 * 100vw) calc(10 / 360 * 100vw) calc(6 / 360 * 100vw)
+    calc(10 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+}
+.menu-form-input-phone {
+  top: calc(252 / 360 * 100vw);
+  right: calc(225 / 360 * 100vw);
+  width: calc(370 / 360 * 100vw);
+  padding: calc(6 / 360 * 100vw) calc(10 / 360 * 100vw) calc(6 / 360 * 100vw)
+    calc(10 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+}
+.button-input {
+  bottom: calc(38 / 360 * 100vw);
+  right: calc(42 / 360 * 100vw);
+  width: calc(369 / 360 * 100vw);
+  height: calc(65 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+}
+
+.form-img-panda {
+  bottom: calc(-25 / 360 * 100vw);
+  left: calc(-27 / 360 * 100vw);
+  width: calc(655 / 360 * 100vw);
+  height: calc(566 / 360 * 100vw);
+}
+.form-title {
+  font-size: calc(40 / 360 * 100vw);
+  margin-left: calc(440 / 360 * 100vw);
+  width: calc(554 / 360 * 100vw);
+}
+.form-title-p1 {
+  margin-bottom: calc(30 / 360 * 100vw);
+  margin-top: calc(28 / 360 * 100vw);
+}
+.form-title-p2 {
+  font-size: calc(25 / 360 * 100vw);
+}
+
+.form-img-ramen {
+  right: calc(-80 / 360 * 100vw);
+  top: calc(-67 / 360 * 100vw);
+  width: calc(364 / 360 * 100vw);
+  height: calc(313 / 360 * 100vw);
+}
+.form-img-wave {
+  bottom: calc(-30 / 360 * 100vw);
+  right: calc(456 / 360 * 100vw);
+  width: calc(204 / 360 * 100vw);
+  height: calc(227 / 360 * 100vw);
+}
+/* Стили для страницы 404 */
+.error {
+  margin: calc(84 / 360 * 100vw) calc(0 / 360 * 100vw) calc(84 / 360 * 100vw)
+    calc(0 / 360 * 100vw);
+  width: calc(1303 / 360 * 100vw);
+  height: calc(748 / 360 * 100vw);
+}
+.error-title {
+  margin: calc(30 / 360 * 100vw) auto auto calc(400 / 360 * 100vw);
+  font-size: calc(300 / 360 * 100vw);
+}
+.error-not-found {
+  top: calc(319 / 360 * 100vw);
+  right: calc(62 / 360 * 100vw);
+  width: calc(479 / 360 * 100vw);
+  font-size: calc(64 / 360 * 100vw);
+}
+.error-img {
+  bottom: calc(0 / 360 * 100vw);
+  left: calc(0 / 360 * 100vw);
+  width: calc(757 / 360 * 100vw);
+  height: calc(719 / 360 * 100vw);
+}
+.error-button {
+  bottom: calc(115 / 360 * 100vw);
+  right: calc(184 / 360 * 100vw);
+  padding: calc(5 / 360 * 100vw) calc(5 / 360 * 100vw);
+  font-size: calc(30 / 360 * 100vw);
+}
+/* Стили для ДОСТАВКИ */
+
+.delivery-map {
+  top: calc(24 / 360 * 100vw);
+  right: calc(573 / 360 * 100vw);
+  width: calc(868 / 360 * 100vw);
+  height: calc(850 / 360 * 100vw);
+  z-index: 3;
+}
+
+.page-delivery-block {
+  margin-top: calc(46 / 360 * 100vw);
+  margin-bottom: calc(62 / 360 * 100vw);
+  width: calc(674 / 360 * 100vw);
+  height: calc(898 / 360 * 100vw);
+}
+.delivery-block-p1 {
+  padding: calc(80 / 360 * 100vw) calc(132 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(245 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.delivery-block-p2 {
+  padding: calc(50 / 360 * 100vw) calc(90 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(203 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.delivery-list {
+  margin: calc(50 / 360 * 100vw) calc(15 / 360 * 100vw) calc(50 / 360 * 100vw)
+    calc(130 / 360 * 100vw);
+  gap: calc(20 / 360 * 100vw);
+  margin-top: calc(50 / 360 * 100vw);
+}
+.delivery-item {
+  font-size: calc(16 / 360 * 100vw);
+}
+.delivery-contacts {
+  padding-left: calc(332 / 360 * 100vw);
+}
+.delivery-contacts a {
+  font-size: calc(16 / 360 * 100vw);
+}
+.delivery-adress {
+  margin-top: calc(50 / 360 * 100vw);
+  padding-left: calc(130 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.delivery-form {
+  gap: calc(16 / 360 * 100vw);
+  padding-left: calc(162 / 360 * 100vw);
+  margin-top: calc(42 / 360 * 100vw);
+  z-index: 5;
+}
+.delivery-form-input {
+  padding: calc(8 / 360 * 100vw) 0;
+  font-size: calc(12 / 360 * 100vw);
+}
+
+.delivery-form-input-adress {
+  padding: calc(8 / 360 * 100vw) 0;
+  width: calc(370 / 360 * 100vw);
+  font-size: calc(12 / 360 * 100vw);
+}
+.delivery-button-input {
+  width: calc(2128 / 360 * 100vw);
+  height: calc(27 / 360 * 100vw);
+  padding: calc(8 / 360 * 100vw) 0;
+  font-size: calc(12 / 360 * 100vw);
+}
+
+/* Стили для блока КОНТАКТЫ */
+.page-contacts-sushi {
+  width: calc(245 / 360 * 100vw);
+  left: calc(318 / 360 * 100vw);
+}
+.contacts-map {
+  bottom: calc(0 / 360 * 100vw);
+  right: calc(626 / 360 * 100vw);
+  width: calc(816 / 360 * 100vw);
+  height: calc(594 / 360 * 100vw);
+}
+
+.page-contacts-block {
+  margin-top: calc(64 / 360 * 100vw);
+  margin-bottom: calc(101 / 360 * 100vw);
+  width: calc(687 / 360 * 100vw);
+  height: calc(644 / 360 * 100vw);
+}
+
+.contacts-block-list {
+  margin: calc(157 / 360 * 100vw) calc(0 / 360 * 100vw) calc(30 / 360 * 100vw)
+    calc(92 / 360 * 100vw);
+  margin-bottom: calc(30 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.contacts-block-link {
+  margin-left: calc(92 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.contacts-wave {
+  top: calc(-69 / 360 * 100vw);
+  left: calc(826 / 360 * 100vw);
+  width: calc(320 / 360 * 100vw);
+  height: calc(202 / 360 * 100vw);
+}
+.contacts-mountain {
+  bottom: calc(0 / 360 * 100vw);
+  right: calc(0 / 360 * 100vw);
+  width: calc(1350 / 360 * 100vw);
+  height: calc(414 / 360 * 100vw);
+}
+
+/* Стили для блока О НАС */
+.page-about-sushi {
+  width: calc(245 / 360 * 100vw);
+  left: calc(172 / 360 * 100vw);
+}
+.page-about-block {
+  margin-top: calc(115 / 360 * 100vw);
+  margin-bottom: calc(89 / 360 * 100vw);
+  width: calc(988 / 360 * 100vw);
+  height: calc(525 / 360 * 100vw);
+}
+.about-block-list {
+  margin: calc(9 / 360 * 100vw) calc(16 / 360 * 100vw) auto
+    calc(16 / 360 * 100vw);
+  gap: calc(20 / 360 * 100vw);
+}
+.about-block-item {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.about-block-img {
+  top: calc(-76 / 360 * 100vw);
+  right: calc(0 / 360 * 100vw);
+  width: calc(518 / 360 * 100vw);
+  height: calc(602 / 360 * 100vw);
+}
+/* Стили для страницы Авторизации */
+.page-signup-left {
+  margin-top: calc(120 / 360 * 100vw);
+  margin-left: calc(357 / 360 * 100vw);
+  margin-bottom: calc(129 / 360 * 100vw);
+  padding-top: calc(172 / 360 * 100vw);
+  width: calc(416 / 360 * 100vw);
+  height: calc(411 / 360 * 100vw);
+}
+
+.page-signup-left-h1 {
+  font-size: calc(25 / 360 * 100vw);
+}
+.page-signup-left-h2 {
+  margin-top: calc(19 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.page-signup-list {
+  margin-top: calc(91 / 360 * 100vw);
+  gap: calc(10 / 360 * 100vw);
+}
+.page-signup-icon svg {
+  width: calc(44 / 360 * 100vw);
+  height: calc(44 / 360 * 100vw);
+}
+
+.page-signup-right {
+  top: calc(45 / 360 * 100vw);
+  right: calc(245 / 360 * 100vw);
+  width: calc(466 / 360 * 100vw);
+  height: calc(320 / 360 * 100vw);
+}
+.page-signup-right-img {
+  right: calc(677 / 360 * 100vw);
+  width: calc(132 / 360 * 100vw);
+  height: calc(145 / 360 * 100vw);
+}
+.signup-input-title {
+  padding: calc(32 / 360 * 100vw) 0 calc(3 / 360 * 100vw) calc(27 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.signup-input {
+  margin: calc(0 / 360 * 100vw) calc(18 / 360 * 100vw);
+  width: calc(430 / 360 * 100vw);
+  height: calc(45 / 360 * 100vw);
+}
+
+.input-checkbox-span {
+  margin-top: calc(18 / 360 * 100vw);
+  margin-left: calc(18 / 360 * 100vw);
+  height: calc(18 / 360 * 100vw);
+  width: calc(18 / 360 * 100vw);
+  padding: calc(3 / 360 * 100vw);
+}
+[type="checkbox"]:checked + span:before {
+  /* <-- ставим иконку, когда чекбокс включен  */
+  top: calc(-7 / 360 * 100vw);
+  font-size: calc(23 / 360 * 100vw);
+}
+.signup-input-checkbox {
+  width: calc(18 / 360 * 100vw);
+  height: calc(18 / 360 * 100vw);
+  margin: calc(18 / 360 * 100vw) calc(0 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(18 / 360 * 100vw);
+}
+.signup-input-checkbox-text {
+  font-size: calc(10 / 360 * 100vw);
+  line-height: calc(12 / 360 * 100vw);
+}
+.signup-button-input {
+  right: calc(192 / 360 * 100vw);
+  bottom: calc(32 / 360 * 100vw);
+  width: calc(63 / 360 * 100vw);
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+  padding: calc(5 / 360 * 100vw) calc(9 / 360 * 100vw);
+  gap: calc(10 / 360 * 100vw);
+  width: calc(81 / 360 * 100vw);
+  height: calc(34 / 360 * 100vw);
+}
+
+.signup-input-text {
+  bottom: calc(40 / 360 * 100vw);
+  right: calc(18 / 360 * 100vw);
+  font-size: calc(10 / 360 * 100vw);
+  line-height: calc(12 / 360 * 100vw);
+}
+/* Стили для блока Неверный пароль */
+.incorrect-page {
+  width: calc(690 / 360 * 100vw);
+  height: calc(346 / 360 * 100vw);
+  margin: calc(158 / 360 * 100vw) calc(420 / 360 * 100vw)
+    calc(156 / 360 * 100vw) calc(380 / 360 * 100vw);
+}
+.incorrect-page-oops {
+  font-size: calc(64 / 360 * 100vw);
+}
+.incorrect-page-text {
+  padding: calc(17 / 360 * 100vw) calc(15 / 360 * 100vw);
+  font-size: calc(35 / 360 * 100vw);
+}
+.incorrect-page-text span {
+  font-size: calc(35 / 360 * 100vw);
+}
+.incorrect-page-button {
+  margin-top: calc(32 / 360 * 100vw);
+  width: calc(175 / 360 * 100vw);
+  height: calc(29 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.incorrect-page-img1 {
+  bottom: calc(55 / 360 * 100vw);
+  left: calc(358 / 360 * 100vw);
+  width: calc(240 / 360 * 100vw);
+  height: calc(251 / 360 * 100vw);
+}
+.incorrect-page-img2 {
+  top: calc(39 / 360 * 100vw);
+  right: calc(274 / 360 * 100vw);
+  width: calc(258 / 360 * 100vw);
+  height: calc(359 / 360 * 100vw);
+}
+/* Стили для блока ЛИЧНЫЙ КАБИНЕТ */
+.personal-sidebar {
+  margin-top: calc(80 / 360 * 100vw);
+  margin-bottom: calc(691 / 360 * 100vw);
+  padding-top: calc(37 / 360 * 100vw);
+}
+.personal {
+  margin-top: calc(59 / 360 * 100vw);
+  height: calc(77 / 360 * 100vw);
+}
+.personal-title {
+  font-size: calc(30 / 360 * 100vw);
+}
+.personal-sidebar-item a {
+  height: calc(72 / 360 * 100vw);
+  padding: calc(0 / 360 * 100vw) calc(80 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(37 / 360 * 100vw);
+}
+
+.personal-sidebar-title {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.personal-sidebar-img {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  width: calc(100 / 360 * 100vw);
+  height: calc(80 / 360 * 100vw);
+}
+
+.page-personal-sushi {
+  width: calc(245 / 360 * 100vw);
+  left: calc(480 / 360 * 100vw);
+}
+.personal-sidebar {
+  width: calc(335 / 360 * 100vw);
+  margin-right: calc(90 / 360 * 100vw);
+}
+.section-personal {
+  height: calc(420 / 360 * 100vw);
+  margin-bottom: calc(43 / 360 * 100vw);
+}
+.personal-name {
+  margin-top: calc(80 / 360 * 100vw);
+  font-size: calc(17 / 360 * 100vw);
+}
+.personal-form-input-name {
+  width: calc(650 / 360 * 100vw);
+  height: calc(54 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  padding-left: calc(25 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-phone {
+  font-size: calc(17 / 360 * 100vw);
+  margin-top: calc(11 / 360 * 100vw);
+}
+.personal-form-input-phone {
+  width: calc(310 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  padding-left: calc(25 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-mail {
+  font-size: calc(17 / 360 * 100vw);
+  margin-top: calc(11 / 360 * 100vw);
+  margin-left: calc(27 / 360 * 100vw);
+}
+.personal-form-input-mail {
+  width: calc(310 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  margin-left: calc(27 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  padding-left: calc(25 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-adress {
+  font-size: calc(17 / 360 * 100vw);
+  margin-top: calc(11 / 360 * 100vw);
+}
+.personal-form-input-adress {
+  width: calc(647 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  padding-left: calc(25 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-form-button {
+  margin-top: calc(50 / 360 * 100vw);
+  width: calc(310 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-form-photo {
+  margin-top: calc(80 / 360 * 100vw);
+  margin-left: calc(70 / 360 * 100vw);
+  width: calc(280 / 360 * 100vw);
+  height: calc(280 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+}
+.personal-form-password {
+  margin-left: calc(425 / 360 * 100vw);
+  margin-bottom: calc(37 / 360 * 100vw);
+}
+
+.personal-form-password-button {
+  margin-top: calc(80 / 360 * 100vw);
+  width: calc(397 / 360 * 100vw);
+  height: calc(66 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+  margin-left: calc(425 / 360 * 100vw);
+}
+.personal-form-password {
+  gap: calc(25 / 360 * 100vw);
+}
+.personal-password {
+  font-size: calc(17 / 360 * 100vw);
+  margin-top: calc(37 / 360 * 100vw);
+}
+.personal-password-input {
+  width: calc(310 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  padding-left: calc(25 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.personal-change-button {
+  width: calc(310 / 360 * 100vw);
+  height: calc(58 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+  margin-left: calc(425 / 360 * 100vw);
+  margin-top: calc(33 / 360 * 100vw);
+  margin-bottom: calc(204 / 360 * 100vw);
+}
+/* Стили для страницы Регистрация */
+.page-reg-left {
+  margin-top: calc(120 / 360 * 100vw);
+  margin-left: calc(357 / 360 * 100vw);
+  margin-bottom: calc(129 / 360 * 100vw);
+  padding-top: calc(172 / 360 * 100vw);
+  width: calc(416 / 360 * 100vw);
+  height: calc(20 / 360 * 100vw);
+}
+
+.page-reg-left-h1 {
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.page-reg-left-h2 {
+  margin-top: calc(19 / 360 * 100vw);
+  font-size: calc(25 / 360 * 100vw);
+  line-height: calc(30 / 360 * 100vw);
+}
+
+.page-reg-list {
+  margin-top: calc(91 / 360 * 100vw);
+  gap: calc(10 / 360 * 100vw);
+}
+.page-reg-icon svg {
+  width: calc(44 / 360 * 100vw);
+  height: calc(44 / 360 * 100vw);
+}
+
+.page-reg-right {
+  column-gap: calc(33 / 360 * 100vw);
+  top: calc(22 / 360 * 100vw);
+  right: calc(245 / 360 * 100vw);
+  width: calc(473 / 360 * 100vw);
+  height: calc(366 / 360 * 100vw);
+}
+.page-reg-right-img {
+  right: calc(677 / 360 * 100vw);
+  top: calc(35 / 360 * 100vw);
+  width: calc(132 / 360 * 100vw);
+  height: calc(145 / 360 * 100vw);
+}
+.reg-input-title {
+  padding-left: calc(34 / 360 * 100vw);
+  padding-top: calc(10 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.reg-input {
+  margin-left: calc(25 / 360 * 100vw);
+  padding-top: calc(33 / 360 * 100vw);
+  width: calc(430 / 360 * 100vw);
+  height: calc(45 / 360 * 100vw);
+}
+.reg-input-checkbox {
+  width: calc(18 / 360 * 100vw);
+  height: calc(18 / 360 * 100vw);
+  margin: calc(18 / 360 * 100vw) calc(0 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(18 / 360 * 100vw);
+}
+.reg-input-checkbox-text {
+  font-size: calc(10 / 360 * 100vw);
+  line-height: calc(12 / 360 * 100vw);
+}
+.reg-button-input {
+  right: calc(110 / 360 * 100vw);
+  bottom: calc(32 / 360 * 100vw);
+  width: calc(63 / 360 * 100vw);
+  height: calc(24 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+  padding: calc(5 / 360 * 100vw) calc(9 / 360 * 100vw);
+  width: calc(235 / 360 * 100vw);
+  height: calc(34 / 360 * 100vw);
+}
+
+/* Стили для блока ИЗБРАННОЕ */
+.favorite {
+  margin-top: calc(59 / 360 * 100vw);
+  height: calc(77 / 360 * 100vw);
+}
+.favorite-title {
+  font-size: calc(30 / 360 * 100vw);
+}
+.favorite-sidebar {
+  margin-top: calc(80 / 360 * 100vw);
+  padding-top: calc(37 / 360 * 100vw);
+  width: calc(335 / 360 * 100vw);
+  margin-right: calc(90 / 360 * 100vw);
+}
+
+.favorite-sidebar-item a {
+  height: calc(72 / 360 * 100vw);
+  padding: 0 calc(80 / 360 * 100vw) calc(0 / 360 * 100vw) calc(37 / 360 * 100vw);
+}
+
+.favorite-sidebar-title {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.favorite-sidebar-img {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  width: calc(100 / 360 * 100vw);
+  height: calc(80 / 360 * 100vw);
+}
+
+.page-favorite-sushi {
+  width: calc(245 / 360 * 100vw);
+  left: calc(515 / 360 * 100vw);
+}
+.section-favorite {
+  margin-bottom: calc(43 / 360 * 100vw);
+}
+.favorite-cards {
+  gap: calc(12 / 360 * 100vw);
+}
+
+/* Стили для блока ИСТОРИЯ ЗАКАЗОВ */
+.history-sidebar {
+  width: calc(388 / 360 * 100vw);
+  padding-top: calc(37 / 360 * 100vw);
+}
+
+.history-sidebar-item a {
+  height: calc(72 / 360 * 100vw);
+  padding: calc(0 / 360 * 100vw) calc(80 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(37 / 360 * 100vw);
+}
+
+.history-sidebar-title {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.history-sidebar-img {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  width: calc(100 / 360 * 100vw);
+  height: calc(80 / 360 * 100vw);
+}
+.section-history {
+  margin-bottom: calc(43 / 360 * 100vw);
+  margin-top: calc(57 / 360 * 100vw);
+}
+.history-block {
+  gap: calc(29 / 360 * 100vw);
+  margin-left: calc(52 / 360 * 100vw);
+}
+.history-block-table {
+  width: calc(1000 / 360 * 100vw);
+}
+.history-block-img {
+  margin: calc(11 / 360 * 100vw);
+}
+.history-block-adress {
+  padding: calc(11 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+  width: calc(228 / 360 * 100vw);
+  height: calc(64 / 360 * 100vw);
+}
+.history-block-price {
+  font-size: calc(16 / 360 * 100vw);
+  padding: calc(11 / 360 * 100vw);
+}
+.history-block-delivery {
+  font-size: calc(16 / 360 * 100vw);
+  padding: calc(11 / 360 * 100vw);
+}
+.history-block-button {
+  right: calc(26 / 360 * 100vw);
+  bottom: calc(14 / 360 * 100vw);
+  width: calc(160 / 360 * 100vw);
+  height: calc(29 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+/* Стили для блока ПОДРОБНОСТИ ЗАКАЗА */
+.details-sidebar {
+  width: calc(388 / 360 * 100vw);
+  padding-top: calc(37 / 360 * 100vw);
+}
+
+.details-sidebar-item a {
+  height: calc(72 / 360 * 100vw);
+  padding: calc(0 / 360 * 100vw) calc(80 / 360 * 100vw) calc(0 / 360 * 100vw)
+    calc(37 / 360 * 100vw);
+}
+
+.details-sidebar-title {
+  font-size: calc(16 / 360 * 100vw);
+}
+
+.details-sidebar-img {
+  bottom: calc(10 / 360 * 100vw);
+  right: calc(-30 / 360 * 100vw);
+  width: calc(100 / 360 * 100vw);
+  height: calc(80 / 360 * 100vw);
+}
+.details-title {
+  font-size: calc(30 / 360 * 100vw);
+}
+.section-details {
+  margin-bottom: calc(43 / 360 * 100vw);
+  margin-top: calc(57 / 360 * 100vw);
+}
+.details-block {
+  gap: calc(29 / 360 * 100vw);
+  margin-left: calc(52 / 360 * 100vw);
+}
+.details-block-table {
+  width: calc(1000 / 360 * 100vw);
+}
+.details-block-img {
+  margin: calc(11 / 360 * 100vw);
+}
+.details-block-adress {
+  padding: calc(11 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+  width: calc(228 / 360 * 100vw);
+  height: calc(64 / 360 * 100vw);
+}
+.details-block-price {
+  font-size: calc(16 / 360 * 100vw);
+  padding: calc(11 / 360 * 100vw);
+}
+.details-block-delivery {
+  font-size: calc(16 / 360 * 100vw);
+  padding: calc(11 / 360 * 100vw);
+}
+.details-block-button {
+  right: calc(26 / 360 * 100vw);
+  top: calc(130 / 360 * 100vw);
+  width: calc(160 / 360 * 100vw);
+  height: calc(29 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.details-cards {
+  gap: calc(35 / 360 * 100vw);
+  padding-left: calc(18 / 360 * 100vw);
+  padding-bottom: calc(26 / 360 * 100vw);
+}
+
+/* Стили для блока КОРЗИНА */
+.cart-sidebar {
+  width: calc(388 / 360 * 100vw);
+  padding-top: calc(37 / 360 * 100vw);
+}
+.cart-block {
+  margin-top: calc(82 / 360 * 100vw);
+}
+.cart-block-one {
+  margin-bottom: calc(12 / 360 * 100vw);
+}
+.cart-block-two {
+  height: calc(116 / 360 * 100vw);
+  margin-bottom: calc(82 / 360 * 100vw);
+}
+.cart-block-item {
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-block-text {
+  width: calc(622 / 360 * 100vw);
+}
+.cart-block-text-1 {
+  font-size: calc(20 / 360 * 100vw);
+}
+.cart-block-text-2 {
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-block-price {
+  width: calc(250 / 360 * 100vw);
+}
+.cart-block-text-3 {
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-block-quantity {
+  gap: calc(5 / 360 * 100vw);
+  width: calc(103 / 360 * 100vw);
+  margin-top: calc(40 / 360 * 100vw);
+  margin-bottom: calc(40 / 360 * 100vw);
+}
+.cart-block-sum {
+  margin-left: calc(67 / 360 * 100vw);
+  width: calc(120 / 360 * 100vw);
+}
+.cart-block-delete {
+  width: calc(139 / 360 * 100vw);
+  height: calc(35 / 360 * 100vw);
+  margin-top: calc(40 / 360 * 100vw);
+  margin-bottom: calc(40 / 360 * 100vw);
+  margin-left: calc(82 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.cart-block-text-color {
+  font-size: calc(20 / 360 * 100vw);
+}
+.cart-block-img {
+  bottom: calc(0 / 360 * 100vw);
+  left: calc(38 / 360 * 100vw);
+  width: calc(169 / 360 * 100vw);
+  height: calc(189 / 360 * 100vw);
+}
+.line {
+  margin-top: calc(60 / 360 * 100vw);
+}
+.discount {
+  gap: calc(36 / 360 * 100vw);
+}
+.discount-title {
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.discount-text {
+  width: calc(207 / 360 * 100vw);
+  height: calc(38 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.discount-check {
+  width: calc(121 / 360 * 100vw);
+  height: calc(34 / 360 * 100vw);
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-block-end {
+  margin-top: calc(69 / 360 * 100vw);
+}
+.cart-summary-block {
+  padding: calc(11 / 360 * 100vw) calc(12 / 360 * 100vw);
+  gap: calc(51 / 360 * 100vw);
+  width: calc(288 / 360 * 100vw);
+  height: calc(78 / 360 * 100vw);
+}
+.cart-summary-text {
+  gap: calc(12 / 360 * 100vw);
+}
+.cart-summary {
+  gap: calc(12 / 360 * 100vw);
+}
+.cart-summary-text-1 {
+  font-size: calc(20 / 360 * 100vw);
+}
+.cart-summary-text-2 {
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-summary-1 {
+  font-size: calc(20 / 360 * 100vw);
+}
+.cart-summary-2 {
+  font-size: calc(16 / 360 * 100vw);
+}
+.cart-order-button {
+  margin-top: calc(50 / 360 * 100vw);
+  margin-bottom: calc(100 / 360 * 100vw);
+}
+.cart-order {
+  width: calc(193 / 360 * 100vw);
+  height: calc(41 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+/* Стили для блока ОФОРМЛЕНИЕ ЗАКАЗА */
+
+.ordering-page {
+  gap: calc(13 / 360 * 100vw);
+}
+.ordering {
+  margin-top: calc(59 / 360 * 100vw);
+  height: calc(77 / 360 * 100vw);
+}
+.ordering-title {
+  font-size: calc(30 / 360 * 100vw);
+}
+.ordering-sidebar {
+  gap: calc(26 / 360 * 100vw);
+  padding-top: calc(42 / 360 * 100vw);
+  margin-top: calc(91 / 360 * 100vw);
+  width: calc(334 / 360 * 100vw);
+  height: calc(518 / 360 * 100vw);
+}
+.ordering-sidebar-text1,
+.ordering-sidebar-text2 {
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.line2 {
+  width: calc(266 / 360 * 100vw);
+}
+.ordering-sidebar-button-text {
+  font-size: calc(16 / 360 * 100vw);
+  width: calc(266 / 360 * 100vw);
+  height: calc(48 / 360 * 100vw);
+}
+.section-order {
+  margin-top: calc(91 / 360 * 100vw);
+  margin-bottom: calc(80 / 360 * 100vw);
+  width: calc(1093 / 360 * 100vw);
+}
+.ordering-map {
+  padding: calc(26 / 360 * 100vw) calc(19 / 360 * 100vw);
+  width: calc(528 / 360 * 100vw);
+  height: calc(646 / 360 * 100vw);
+}
+.ordering-name {
+  margin-top: calc(22 / 360 * 100vw);
+  font-size: calc(17 / 360 * 100vw);
+}
+.ordering-form-input-name {
+  width: calc(490 / 360 * 100vw);
+  height: calc(53 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  padding-left: calc(17 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+.ordering-form-input-text {
+  width: calc(490 / 360 * 100vw);
+  height: calc(109 / 360 * 100vw);
+  margin-top: calc(8 / 360 * 100vw);
+  padding-left: calc(17 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+
+.ordering-button-block {
+  margin-bottom: calc(28 / 360 * 100vw);
+}
+.ordering-button {
+  margin-top: calc(40 / 360 * 100vw);
+  width: calc(223 / 360 * 100vw);
+  height: calc(60 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+}
+
+/* Стили для футера */
+.footer-nav {
+  justify-content: space-around;
+  height: calc(97 / 360 * 100vw);
+  border-width: calc(2 / 360 * 100vw);
+}
+
+.footer-logo-img {
+  width: calc(71 / 360 * 100vw);
+  height: calc(69 / 360 * 100vw);
+  margin: calc(15 / 360 * 100vw) calc(0 / 360 * 100vw) calc(0 / 360 * 100vw)
+    auto;
+}
+/* .footer-logo-font-p1 {
+  padding-top: calc(27 / 360 * 100vw);
+  font-size: calc(20 / 360 * 100vw);
+  line-height: calc(24 / 360 * 100vw);
+}
+.footer-logo-font-p2 {
+  padding-top: calc(13 / 360 * 100vw);
+  font-size: calc(30 / 360 * 100vw);
+  line-height: calc(35 / 360 * 100vw);
+}
+.footer-logo-font-p3 {
+  font-size: calc(16 / 360 * 100vw);
+  line-height: calc(19 / 360 * 100vw);
+} */
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: calc(7 / 360 * 100vw);
+  width: calc(151 / 360 * 100vw);
+  height: calc(50 / 360 * 100vw);
+  font-size: calc(10 / 360 * 100vw);
+}
+.footer-list a {
+  font-weight: 500;
+}
+.footer-icon {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(7 / 360 * 100vw);
+}
+.footer-icon-list {
+  display: flex;
+  flex-direction: row;
+}
+.footer-icon-item {
+  display: flex;
+  flex-direction: column;
+}
+.footer-icon-inst svg {
+  width: calc(21 / 360 * 100vw);
+  height: calc(21 / 360 * 100vw);
+}
+.footer-icon-whatsapp svg {
+  width: calc(21 / 360 * 100vw);
+  height: calc(21 / 360 * 100vw);
+}
+.footer-icon-fav svg {
+  width: calc(21 / 360 * 100vw);
+  height: calc(21 / 360 * 100vw);
+}
+.footer-icon-lk svg {
+  width: calc(21 / 360 * 100vw);
+  height: calc(21 / 360 * 100vw);
+}
+.footer-icon-hot {
+  width: calc(89 / 360 * 100vw);
+  height: calc(22 / 360 * 100vw);
+  font-size: calc(8 / 360 * 100vw);
+  border-width: calc(1 / 360 * 100vw);
+}
+
+.footer-phone {
+  font-size: calc(10 / 360 * 100vw);
+}
+
+.footer-red {
+  gap: calc(10 / 360 * 100vw);
+  height: calc(34 / 360 * 100vw);
+  border-width: calc(2 / 360 * 100vw);
+}
+.footer-red-p1 {
+  font-size: calc(10 / 360 * 100vw);
+  order: 3;
+}
+.footer-red-p2 {
+  font-size: calc(10 / 360 * 100vw);
+  order: 1;
+}
+.footer-red-p3 {
+  font-size: calc(10 / 360 * 100vw);
+  order: 2;
+}

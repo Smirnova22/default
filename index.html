@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание страницы" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <div class="body-container">
+      <header class="header-container">
+        <div class="wrapper">
+          <nav class="header-nav">
+            <button
+              type="button"
+              class="burger-button mobile-device"
+              id="burger"
+            >
+              <span></span>
+            </button>
+            <a href="/" class="header-logo desktop-device">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p desktop-device">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <h1 class="header-text-mob font-keitaro mobile-device">
+              Tokyo Bites
+            </h1>
+            <ul class="header-list  header-dropdown" id="header-list">
+              <li class="header-item">
+                <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+              </li>
+              <li class="header-item">
+                <a class="font-montserrat" href="/pages/about.html">О нас</a>
+              </li>
+              <li class="header-item">
+                <a class="font-montserrat" href="/pages/delivery.html"
+                  >Доставка</a
+                >
+              </li>
+              <li class="header-item">
+                <a class="font-montserrat" href="/pages/contacts.html"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <ul class="header-icon">
+              <li>
+                <button class="search__img" id="searchbtn">
+                  <svg>
+                    <use href="/img/sprite.svg#search3"></use>
+                  </svg>
+                </button>
+                <div class="header-input" id="header-input">
+                  <form method="post" action="/">
+                    <input
+                      class="input-search"
+                      type="text"
+                      placeholder="Поиск"
+                    />
+                    <button class="button-search">
+                      <svg>
+                        <use href="/img/sprite.svg#search3"></use>
+                      </svg>
+                    </button>
+                  </form>
+                </div>
+              </li>
+              <li>
+                <button class="header-icon-basket" id="cart">
+                  <svg>
+                    <use href="/img/sprite.svg#basket3"></use>
+                  </svg>
+                  <div class="header-icon-basket-3 font-keitaro" id="cart-num">
+                    0
+                  </div>
+                </button>
+              </li>
+              <li>
+                <button class="header-icon-fav">
+                  <svg>
+                    <use href="/img/sprite.svg#fav"></use>
+                  </svg>
+                  <div class="header-icon-fav-0 font-keitaro" id="fav-num">
+                    0
+                  </div>
+                </button>
+              </li>
+              <li>
+                <a href="/pages/personal.html" class="header-icon-lk"
+                  ><svg>
+                    <use href="/img/sprite.svg#lk3"></use></svg
+                ></a>
+              </li>
+              <div class="header-phone font-keitaro desktop-device">
+                <a href="tel:+78005554555">8 800 555 45 55</a>
+                <p class="header-time font-keitaro">c 7.00 до 22.00</p>
+              </div>
+            </ul>
+
+          </nav>
+        </div>
+      </header>
+
+      <main class="main-container">
+        <div class="wrapper">
+          <section class="section-one-background">
+            <div class="section-one">
+              <a href="/" class="header-logo mobile-device mob-header-logo">
+                <div class="header-logo-img">
+                  <img src="/img/logo.png" alt="Logo" />
+                </div>
+                <div class="header-logo-p mobile-device">
+                  <p>Restaurante</p>
+                  <p class="font-keitaro">Tokyo bites</p>
+                  <p>Experience the taste of Tokyo</p>
+                </div>
+              </a>
+              <h1 class="section-one-first font-keitaroOutline desktop-device">
+                <span>Tokyo Bites</span>
+                <span>experience the taste of Tokyo</span>
+              </h1>
+              <!--     <ul class="mob-section-one mobile-device">
+                <li class="mob-section-one-item">
+                  <div class="mob-section-one-img">
+                    <img src="/img/mob-star.png" alt="star" />
+                  </div>
+
+                  <p class="section-one-title-1">
+                    Ресторан без ресторана <br />
+                    <span class="section-one-title-2"
+                      >c традиционной японской кухней</span
+                    >
+                  </p>
+                </li>
+                <li class="mob-section-one-item">
+                  <div class="mob-section-one-img">
+                    <img src="/img/mob-food.png" alt="food" />
+                  </div>
+                  <p class="section-one-title-1">
+                    Быстрая доставка <br />
+                    <span class="section-one-title-2"
+                      >доставим еду быстрее, чем кто-либо другой</span
+                    >
+                  </p>
+                </li>
+
+                <li class="mob-section-one-item">
+                  <div class="mob-section-one-img">
+                    <img src="/img/mob-delivery.png" alt="delivery" />
+                  </div>
+                  <p class="section-one-title-1">
+                    Японский опыт <br />
+                    <span class="section-one-title-2"
+                      >мы создали настоящий японский опыт в каждом заказе</span
+                    >
+                  </p>
+                </li>
+              </ul>  -->
+
+              <div class="section-one-second">
+                <div class="section-one-second-item-one">
+                  <div class="mob-section-one-img mobile-device">
+                    <img src="/img/mob-star.png" alt="star" />
+                  </div>
+                  <p>
+                    <span>Ресторан без ресторана</span>
+                    <span>c традиционной японской кухней</span>
+                  </p>
+                </div>
+                <div class="section-one-second-item-two">
+                  <div class="mob-section-one-img mobile-device">
+                    <img src="/img/mob-delivery.png" alt="star" />
+                  </div>
+                  <p>
+                    <span>Быстрая доставка</span>
+                    <span>доставим еду быстрее, чем кто-либо другой</span>
+                  </p>
+                </div>
+                <div class="section-one-second-item-three">
+                  <div class="mob-section-one-img mobile-device">
+                    <img src="/img/mob-food.png" alt="star" />
+                  </div>
+                  <p>
+                    <span>Японский опыт</span>
+                    <span
+                      >мы создали настоящий японский опыт в каждом заказе</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div>
+              <div class="menu">
+                <div class="menu-title font-montserrat">
+                  Вкусное путешествие по Японии:
+                  <span class="menu-title-span">наше меню</span>
+                  <div class="menu-img">
+                    <img src="/img/sushi.png" alt="Суши" />
+                  </div>
+                </div>
+              </div>
+              <div class="section-menu">
+                <div class="mob-menu-ice-cream">
+                  <div class="section-menu-new">
+                    <p class="font-keitaroOutline">NEW</p>
+                  </div>
+                  <div class="menu-ice-cream">
+                    <div class="menu-ice-cream-z">
+                      <p><span>Скидка</span> на все десерты</p>
+                      <p class="menu-percent font-keitaro">-15%</p>
+                      <button class="button">Подробней</button>
+                      <p class="menu-fish-ice-cream font-keitaro">
+                        Fish ice cream
+                      </p>
+                    </div>
+                    <div class="menu-img-ice">
+                      <img src="/img/icecream.png" alt="ice-cream" />
+                    </div>
+                  </div>
+                </div>
+                <div class="menu-cards">
+                  <div class="menu-card">
+                    <p class="menu-card-name font-keitaro">Ramen</p>
+                    <div class="menu-card-img">
+                      <img src="/content/sushi4.png" alt="" />
+                    </div>
+                    <h4>Лапша Рамен</h4>
+                    <a href="/pages/menu.html" class="button">Подробней</a>
+                  </div>
+                  <div class="menu-card">
+                    <p class="menu-card-name font-keitaro">Sushi</p>
+                    <div class="menu-card-img">
+                      <img src="/content/sushi.png" alt="" />
+                    </div>
+                    <h4>Суши и роллы</h4>
+                    <a href="/pages/menu.html" class="button">Подробней</a>
+                  </div>
+                  <div class="menu-card">
+                    <p class="menu-card-name font-keitaro">Gyoza</p>
+                    <div class="menu-card-img">
+                      <img src="/content/sushi2.png" alt="" />
+                    </div>
+                    <h4>Японские закуски</h4>
+                    <a href="/pages/menu.html" class="button">Подробней</a>
+                  </div>
+                  <div class="menu-card">
+                    <p class="menu-card-name font-keitaro">Soup</p>
+                    <div class="menu-card-img">
+                      <img src="/content/sushi3.png" alt="" />
+                    </div>
+                    <h4>Горячие блюда</h4>
+                    <a href="/pages/menu.html" class="button">Подробней</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-help-background">
+            <div class="help">
+              <h3 class="help-title font-montserrat">
+                <span class="help-title-none">Помочь с выбором?</span> Закажи
+                <span class="help-title-span">дегустационное меню!!!</span>
+                <br />
+                <!-- <div class="mob-help-title-p1"> -->
+                  <span class="help-title-mini">Мини порции всего меню всего за <span class="help-title-999 font-keitaro">999</span> руб.</span>
+                </div>
+              </h3>
+
+              <div>
+                <button
+                  onclick="alert('Товар добавлен в корзину')"
+                  class="help-order font-motserrat button"
+                >
+                  Заказать
+                </button>
+              </div>
+              <div class="help-order-img">
+                <img src="/img/section-help.png" alt="Снаксы" />
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="drinks">
+              <p class="drinks-japan font-keitaro">Japan Drinks</p>
+              <div class="drinks-title">
+                <p class="drinks-title-p font-montserrat">
+                  Разнообразие напитков для любого настроения <br />
+                  от классических до экспериментальных
+                </p>
+                <div class="drinks-japan-img">
+                  <img src="/img/wave1.png" alt="Облако слева" />
+                </div>
+                <div class="drinks-title-img">
+                  <img src="/img/wave2.png" alt="Облако справа" />
+                </div>
+              </div>
+            </div>
+            <div class="section-drinks">
+              <div class="drinks-cards">
+                <div class="drink-card">
+                  <p class="drink-card-name font-keitaro">Sake</p>
+                  <div class="drink-card-img">
+                    <img src="/content/drink4.png" alt="" />
+                  </div>
+                  <h4>Рисовое вино</h4>
+                  <a href="/pages/menu.html" class="button">Подробней</a>
+                </div>
+                <div class="drink-card">
+                  <p class="drink-card-name font-keitaro">Shochu</p>
+                  <div class="drink-card-img">
+                    <img src="/content/drink.png" alt="" />
+                  </div>
+                  <h4>Крепкий алкоголь</h4>
+                  <a href="/pages/menu.html" class="button">Подробней</a>
+                </div>
+                <div class="drink-card">
+                  <p class="drink-card-name font-keitaro">Tea</p>
+                  <div class="drink-card-img">
+                    <img src="/content/drink3.png" alt="" />
+                  </div>
+                  <h4>Традиционный чай</h4>
+                  <a href="/pages/menu.html" class="button">Подробней</a>
+                </div>
+                <div class="drink-card">
+                  <p class="drink-card-name font-keitaro">Soda</p>
+                  <div class="drink-card-img">
+                    <img src="/content/drink2.png" alt="" />
+                  </div>
+                  <h4>Безалкогольные напитки</h4>
+                  <a href="/pages/menu.html" class="button">Подробней</a>
+                </div>
+              </div>
+              <div class="section-drinks-beer">
+                <div class="beer">
+                  <p class="font-keitaro">
+                    <span class="font-keitaroOutline">Japan</span>Beer
+                  </p>
+                </div>
+                <div class="drinks-action">
+                  <h4>
+                    <span>Пиво</span> по японскому рецепту из
+                    <span>своей</span> пивоварни
+                  </h4>
+                  <h5 class="desktop-device">снесет твою голову как катана</h5>
+                  <a href="/pages/menu.html" class="drinks-action-button button"
+                    >Подробней</a
+                  >
+                  <div class="drinks-cat font-keitaro">
+                    <img src="/content/cat_without.png" alt="cat" />
+                    <p class="desktop-device">ビール</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="delivery-title">
+              <h3>Быстрая и удобная доставка прямо до вашей двери!</h3>
+            </div>
+            <div class="delivery-block">
+              <span class="delivery-japan">ビール</span>
+              <p class="desktop-device"></p>
+              <ul class="mob-delivery-block-text">
+                <li>
+                  Закажите японскую еду в нашем ресторане и наслаждайтесь вкусом
+                  прямо у себя дома!
+                </li>
+                <li>
+                  <span>бесплатная</span> доставка по городу при заказе от
+                  <span>1499 руб</span>
+                </li>
+                <li>
+                  собственная служба доставки,
+                  <span>гарантируем качество</span> доставки
+                </li>
+                <li>
+                  <span>ценим ваше время</span>, поэтому доставляем еду быстро и
+                  в удобное для вас время. Наша команда профессионалов упакует
+                  ваш заказ так, чтобы он не потерял своего вкуса и внешнего
+                  вида в процессе доставки.
+                </li>
+                <div class="mob-delivery-block-second">
+                  <li>
+                    Мы готовим блюда только из свежих и качественных
+                    ингредиентов, чтобы удовлетворить самых искушенных гурманов.
+                  </li>
+                  <li>
+                    Заказывайте у нас и получите возможность наслаждаться
+                    вкусной японской кухней прямо у себя дома!
+                  </li>
+                  <li>
+                    заказывайте еду удобным для вас способом, позвоните в
+                    ресторан или оформите на сайте!
+                  </li>
+                  <li>
+                    при оформлении заказа <span>на сайте</span> получите
+                    индивидуальную
+                    <span>скидку 25%</span>
+                  </li>
+                </div>
+              </ul>
+              <a href="/pages/ordering.html" class="delivery-button"
+                >Оформить заказ</a
+              >
+              <div class="delivery-img">
+                <img src="/img/samurai.png" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer-container">
+        <div class="wrapper">
+          <nav class="footer-nav">
+            <a href="/" class="header-logo">
+              <div class="header-logo-img">
+                <img src="/img/logo.png" alt="Logo" />
+              </div>
+              <div class="header-logo-p desktop-device">
+                <p>Restaurante</p>
+                <p class="font-keitaro">Tokyo bites</p>
+                <p>Experience the taste of Tokyo</p>
+              </div>
+            </a>
+            <div class="footer-menu">
+              <ul class="footer-list">
+                <li>
+                  <a class="font-montserrat" href="/pages/menu.html">Меню</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/about.html">О нас</a>
+                </li>
+                <li>
+                  <a class="font-montserrat" href="/pages/delivery.html"
+                    >Доставка</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-montserrat"
+                    href="/pages/contacts.html"
+                    >Контакты</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="font-montserrat mobile-device"
+                    href="/pages/personal.html"
+                    >Личный кабинет</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footer-icon">
+                <div class="footer-icon-list">
+                  <li>
+                    <a
+                      href="/pages/favorite.html"
+                      class="header-icon-fav"
+                      ><svg>
+                        <use href="/img/sprite.svg#fav"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="/pages/personal.html"
+                      class="header-icon-lk "
+                      ><svg>
+                        <use href="/img/sprite.svg#lk3"></use></svg
+                    ></a>
+                  </li>
+                  <li>
+                    <span class="footer-icon-inst "
+                      ><svg>
+                        <use href="/img/sprite.svg#telegram"></use></svg
+                    ></span>
+                  </li>
+                  <li>
+                    <span class="footer-icon-whatsapp "
+                      ><svg>
+                        <use href="/img/sprite.svg#whatsapp"></use></svg
+                    ></span>
+                  </li>
+                </div>
+                <li class="desktop-device">
+                  <button class="footer-icon-hot font-montserrat button">
+                    горячая линия
+                  </button>
+                </li>
+                <li>
+                  <p class="footer-time font-keitaro desktop-device">
+                    c 7.00 до 23.00
+                  </p>
+                  <a class="footer-phone font-keitaro" href="tel:+78005554555"
+                    >8 800 555 45 55</a
+                  >
+                </li>
+                <li class="mobile-device">
+                  <button class="footer-icon-hot font-montserrat button">
+                    обратный звонок
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="footer-red">
+            <li class="footer-red-p1 font-keitaro">Tokyo bites 2023</li>
+            <li class="footer-red-p2 font-montserrat">
+              <a href="#">Политика конфиденциальности</a>
+            </li>
+            <li class="footer-red-p3 font-montserrat">
+              <a href="#">made in FT</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
